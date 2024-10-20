@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title itemprop="name">Hire Deddy Corbuzier</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .hire-form {
+            background-color: #bdc3c7;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <header class="header" itemscope itemtype="https://schema.org/Organization">
+            <img alt="Website logo" src="./assets/logo.webp" itemprop="logo" />
+            <div class="header-content">
+                <h1 style="font-weight: bold" itemprop="name">Hire Deddy Corbuzier</h1>
+                <p itemprop="description">Fill out the form below to hire Deddy Corbuzier for your event</p>
+            </div>
+        </header>
+
+        <div class="row no-gutters flex-grow-1">
+            <nav class="col-md-3 col-lg-2 sidebar" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                <a href="/" itemprop="url">HOME</a>
+                <a href="/biografi/" itemprop="url">BIOGRAFI</a>
+                <a href="/podcast/" itemprop="url">PODCAST</a>
+                <a href="#" itemprop="url">KONTAK</a>
+                <a class="active" href="" itemprop="url" style="font-size: medium"><i>Hire (Form)</i></a>
+                <a href="/tabel/" itemprop="url" style="font-size: medium"><i>Registered Data Table</i></a>
+            </nav>
+
+            <main class="col-md-9 col-lg-10 main-content" itemscope itemtype="https://schema.org/Person">
+                <div class="hire-form">
+                    <h2>Hire Deddy Corbuzier</h2>
+                    <form action="" method="GET" itemscope itemtype="https://schema.org/Event">
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" itemprop="attendee" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" class="form-control" id="email" name="email" itemprop="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="event_date">Event Date:</label>
+                            <input type="date" class="form-control" id="event_date" name="event_date" itemprop="startDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Event Type:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="event_type" id="corporate" value="corporate" required>
+                                <label class="form-check-label" for="corporate">Corporate Event</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="event_type" id="private" value="private">
+                                <label class="form-check-label" for="private">Private Event</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Services Required:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="services[]" id="mc" value="mc">
+                                <label class="form-check-label" for="mc">Master of Ceremony</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="services[]" id="comedian" value="comedian">
+                                <label class="form-check-label" for="comedian">Comedian</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" itemprop="potentialAction">Submit</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
